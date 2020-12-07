@@ -15,10 +15,17 @@ class CounterSizeGenerator extends Component {
     render() {
         return (
             <div>
+                <section style={
+                {
+                 border: '2px solid white',
+                 padding: '15px'
+                }
+            }>
                 <label>Generate  
                 <input type="number" value={this.state.size} onChange={this.onChange} />
                 counter</label>
                 <CounterGroup size={this.state.size} />
+                </section>
             </div>
         );
     }
