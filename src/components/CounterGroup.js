@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Counter from "./Counter";
 
 class CounterGroup extends Component {
-    initArraySize = (size) => {
+    initArraySize = (number) => {
+        const size = number.length > 0 ? parseInt(number):0;
        return Array.from(Array(size).keys())
     };
     render() {
