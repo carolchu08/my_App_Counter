@@ -28,7 +28,6 @@ class CounterGroup extends Component {
                 {this.state.arrayForRequiredSize.map((value) => (
                     <CounterContainer key = {value} />
                 ))}
-                
             </div>
         );
     }

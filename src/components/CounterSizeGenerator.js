@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../Style/CounterSizeGeneratorStyle.css';
 
 class CounterSizeGenerator extends Component {
     constructor(props) {
@@ -16,15 +17,10 @@ class CounterSizeGenerator extends Component {
     render() {
         return (
             <div>
-                <section style={
-                {
-                 border: '2px solid white',
-                 padding: '15px'
-                }
-            }>
-                <label>Generate  
-                <input type="number" value={this.state.size} onChange={this.onChange} />
-                counter</label>
+                <section className='sizeGeneratorBox'>
+                <label>Generate 
+                <input className='sizeGeneratorBoxPadding' type="number" value={this.state.size} onChange={this.onChange} />
+                 counter</label>
                 </section>
             </div>
         );

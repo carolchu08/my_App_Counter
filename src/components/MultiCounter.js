@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import CounterGroup from "./CounterGroup";
 import CounterGroupSumContainer from '../Container/CounterGroupSumContainer';
 import CounterSizeGeneratorContainer from '../Container/CounterSizeGeneratorContainer';
 import CounterGroupContainer from '../Container/CounterGroupContainer';

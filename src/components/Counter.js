@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../Style/CounterStyle.css';
 
  class Counter extends Component {
     constructor(props) {
@@ -22,7 +23,7 @@ import React, { Component } from 'react';
     }
     render() {
         return (
-            <section>
+            <section className='counterBox'>
                 <input type="button" value="+" onClick= {this.onIncrease}/>
                 <span>{this.state.number}</span>
                 <input type="button" value="-" onClick= {this.onDecrease}/>
