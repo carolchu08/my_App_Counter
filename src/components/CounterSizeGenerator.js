@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import CounterGroup from './CounterGroup';
 
 class CounterSizeGenerator extends Component {
     constructor(props) {
@@ -11,7 +10,8 @@ class CounterSizeGenerator extends Component {
     }
     onChange = (event) => {
         this.setState({size:event.target.value});
-        this.props.onChange(event);
+        this.props.updateSize(event.target.value);
+        this.props.resetNum();
     };
     render() {
         return (

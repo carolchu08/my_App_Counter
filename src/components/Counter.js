@@ -11,13 +11,13 @@ import React, { Component } from 'react';
      onIncrease = ()=>{
          this.setState(
              prevState=> ({number: prevState.number+1}));
-             this.props.onChangeValue(1);
+            this.props.increaseSum();
      }
 
      onDecrease = ()=>{
         this.setState({
             number: this.state.number -1,});
-            this.props.onChangeValue(-1);
+            this.props.decreaseSum();
 
     }
     render() {
